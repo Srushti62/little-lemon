@@ -89,7 +89,7 @@ const Profile = () => {
 
   const saveProfileData = async () => {
     await AsyncStorage.setItem("formData", JSON.stringify(formData));
-    Alert.alert("Changes successful.");
+    Alert.alert("Profile updated successfully!");
   };
 
   const handleFormData = (name, value) => {
